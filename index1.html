@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width-device-width,initial-scale=1.0">
+        <title>Grid style </title>
+        <link rel="stylesheet" href="./demo.css" />
+
+    </head>
+    <body>
+        <div class="heading">
+        <h1>Different Online Stores</h1>
+    </div>
+        <div class="box">           
+             <div class ="image">
+                <img src="file:///Users/macuser/Desktop/cardweb/chasma.jpeg">
+            </div>          
+              <h4>This is the web page of Chasma Nepal</h4>
+            <p>hasdhsaudwdn hsdyudw gskjdiu njdhsjfk bsse dhsshdh Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, incidunt. Totam doloremque sed perspiciatis repellat a quasi quidem accusamus cum, veritatis odio voluptate minima rem provident illum. Eaque, modi eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt, soluta tenetur sit illo perferendis tempore? Illo hic ad a, itaque minus nostrum ex odio ratione. Accusantium deleniti quasi quam!</p>
+            <a href="javascript:void();" class="readmore-btn">Expand</a>
+            </div>
+        </div>
+
+        <div class="box">           
+            <div class ="image">
+               <img src="file:///Users/macuser/Desktop/cardweb/mens.jpeg">
+           </div>          
+             <h4>This is the web page of mens wear</h4>
+           <p>hasdhsaudwdn hsdyudw gskjdiu njdhsjfk bsse dhsshdh Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, incidunt. Totam doloremque sed perspiciatis repellat a quasi quidem accusamus cum, veritatis odio voluptate minima rem provident illum. Eaque, modi eius?</p>
+           <a href="javascript:void();" class="readmore-btn">Expand</a>
+           </div>
+       </div>
+
+       <div class="box">           
+        <div class ="image">
+           <img src="file:///Users/macuser/Desktop/cardweb/womes.jpeg">
+       </div>          
+         <h4>This is the web page of womens wear</h4>
+       <p>hasdhsaudwdn hsdyudw gskjdiu njdhsjfk bsse dhsshdh Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, incidunt. Totam doloremque sed perspiciatis repellat a quasi quidem accusamus cum, veritatis odio voluptate minima rem provident illum. Eaque, modi eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam sint tempore excepturi tenetur sit quidem temporibus earum consectetur id delectus modi cumque nemo quas, nam labore aspernatur suscipit exercitationem.</p>
+       <a href="javascript:void();" class="readmore-btn">Expand</a>
+       </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+   $(".readmore-btn").on('click',function(){
+      $(this).parent().toggleClass("showContent");
+      var replaceText = $(this).parent().hasClass("showContent") ? "Read less" : "Read More";
+      $(this).text(replaceText);
+   });
+   </script>
+    </body>
+</html>
